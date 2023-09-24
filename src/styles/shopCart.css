@@ -1,0 +1,181 @@
+.cartBox {
+    margin: 0 auto;
+    width: 90%;
+    background-color: #0a0a0a4f;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #044233a4;
+}
+
+.cartBox h2 {
+    padding: 1rem 2.5rem;
+    padding-bottom: 0;
+    font-size: 46px;
+}
+
+.cartBox .shoppingCart {
+    color: #022c22;
+    min-height: 65vh;
+    background-color: #ecfdf5;
+    box-shadow: 5px 5px 10px #065c46;
+    padding: 2rem;
+}
+
+.cartBox .emptyMessage {
+    margin-top: 5rem;
+    text-align: center;
+    color: #022c22;
+    font-size: xx-large;
+}
+
+.cartBox .emptyMessage a {
+    color: #042f2e;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+thead th {
+    text-align: left;
+    border-bottom: 1px solid #042f2e;
+    font-size: x-large;
+}
+
+tbody tr {
+    height: 6rem;
+    font-size: larger;
+    border-bottom: 1px solid #9ca3af;
+}
+
+tbody img {
+    border: 1px solid #065c46;
+    max-height: 6rem;
+}
+
+tbody a {
+    color: #022c22;;
+}
+
+tbody button {
+    appearance: none;
+    border-radius: 2px;
+    border: 1px solid #7f1d1d;
+    background-color: #ffffff00;
+    color: #7f1d1d;
+    font-size: small;
+    padding: 0.25rem;
+}
+
+tbody button:hover {
+    cursor: pointer;
+    animation: removeButtonAnimation 150ms;
+    background-color: #7f1d1d;
+    color: #ffffff;
+}
+
+tfoot {
+    font-size: larger;
+    height: 60px;
+}
+
+tfoot th {
+    text-align: left;
+}
+
+.cartBox .checkoutDiv {
+    width: 80%;
+}
+
+.cartBox .checkout {
+    font-size: medium;
+    margin-top: 2rem;
+    margin-left: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid #022c22;
+    background-color: #022c22;
+    color: #fafafa;
+}
+
+.cartBox .checkout:hover {
+    cursor: pointer;
+    animation: checkoutAnimation 150ms;
+    background-color: #fafafa;
+    color: #022c22;
+}
+
+
+
+@keyframes removeButtonAnimation {
+    from {
+        background-color: #ffffff00;
+        color: #7f1d1d;
+    }
+
+    to {
+        background-color: #7f1d1d;
+        color: #ffffff;
+    }
+}
+
+@keyframes checkoutAnimation {
+    from {
+        background-color: #022c22;
+        color: #fafafa;
+    }
+
+    to {
+        background-color: #fafafa;
+        color: #022c22;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .cartBox h2 {
+        padding: 1rem 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    thead th {
+        font-size: large;
+    }
+
+    tbody {
+        font-size: small;
+    }
+
+    tbody .tableQuantity {
+        max-width: 5rem;
+    }
+    
+    tbody .tableQuantity input {
+        width: 5rem;
+    }
+
+    .cartBox .checkout {
+        margin-left: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartBox .shoppingCart {
+        padding: 0;
+    }
+
+    .cartBox .checkout {
+        margin-left: 80%;
+    }
+}

@@ -1,0 +1,113 @@
+.productBox {
+    margin: 2rem auto 0 auto;
+    width: 90%;
+    border-radius: 8px;
+    min-height: 75vh;
+    background-color: #ecfdf5;
+    box-shadow: 5px 5px 10px #065c46;
+    color: #022c22;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.productBox .imageContainer {
+    background-color: white;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    margin: 5%;
+    min-width: 200px;
+    width: 45%;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer img {
+    padding: 5rem;
+    object-fit: contain;
+    min-width: 80%;
+    height: 100%;
+}
+
+.productBox h2 {
+    font-size: 36px;
+}
+
+.productBox .productInfo {
+    max-width: 50%;
+    padding-right: 5%;
+}
+
+.addToCart {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.addToCart input {
+    border-radius: 2px;
+    border: 1px solid #022c22;
+}
+
+.addToCart button {
+    margin-bottom: 2rem;
+    border: 1px solid #022c22;
+    border-radius: 18px;
+    background-color: #022c22;
+    color: #fafafa;
+    appearance: none;
+    margin-top: 3rem;
+    font-size: larger;
+    height: 45px;
+    width: 10rem;
+}
+
+.addToCart button:hover {
+    cursor: pointer;
+    background-color: #0d4637;
+}
+
+.productPrice {
+    font-size: xx-large;
+}
+
+.addToCartButton.added {
+    border: 1px solid #0f766e;
+    background-color: #0f766e;
+}
+
+.addToCartButton.added:hover {
+    cursor: pointer;
+    background-color: #129b8b;
+}
+
+
+
+@media (max-width: 700px) {
+    .productBox {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .productBox .imageContainer {
+        width: 80%;
+    }
+
+    .productBox h2 {
+        text-align: center;
+        font-size: large;
+    }
+
+    .productBox .productInfo {
+        padding-left: 5%;
+        font-size: medium;
+        max-width: 90%;
+    }
+
+    .addToCart {
+        align-items: center;
+    }
+}

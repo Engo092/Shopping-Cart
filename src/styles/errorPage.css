@@ -1,0 +1,17 @@
+.errorBox {
+    margin: 2rem auto 0 auto;
+    width: 90%;
+    border-radius: 8px;
+    min-height: 75vh;
+    background-color: #ecfdf5;
+    box-shadow: 5px 5px 10px #065c46;
+    color: #022c22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorBox h2 {
+    font-size: xx-large;
+}
